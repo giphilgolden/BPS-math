@@ -33,7 +33,7 @@ calculate.addEventListener("click", function(){
  totalPallets.innerHTML = 0 + (1 * topsInputValue) + (1 * bottomsInputValue) + (1 * sidesInputValue) + (1 * greyTopsInputValue)
  totalWeight.innerHTML =  (topsInput.value * 391) + (bottomsInput.value * 538) + (sidesInput.value * 953) + (greyTopsInput.value * 546)
  totalPieces.innerHTML =  (topsInput.value * 25) + (bottomsInput.value * 25) + (sidesInput.value * 50) + (greyTopsInput.value * 320)
-if (greyTopsInput.value < 0) {
+if (greyTopsInput.value > 0) {
      ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides, " + greyTopsInput.value + " pallets of grey tote tops. Total weight = " + totalWeight.innerHTML + ", Total Pieces = " + totalPieces.innerHTML
  } else {
     ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides. Total weight = " + totalWeight.innerHTML + ", Total Pieces = " + totalPieces.innerHTML
