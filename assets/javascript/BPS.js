@@ -28,9 +28,9 @@ calculate.addEventListener("click", function(){
  bottomsHTMLPieces.innerHTML = bottomsInput.value * 25
  sidesHTMLWeight.innerHTML = sidesInput.value * 953
  sidesHTMLPieces.innerHTML = sidesInput.value * 50
- greyTopsHTMLPieces.innerHTML = greyTopsInput.value * 546
- greyTopsHTMLWeight.innerHTML = greyTopsInput.value * 320
- totalPallets.innerHTML = 0 + (1 * topsInputValue) + (1 * bottomsInputValue) + (1 * sidesInputValue) + (1 * greyTopsInputValue)
+ greyTopsHTMLPieces.innerHTML = greyTopsInput.value * 320
+ greyTopsHTMLWeight.innerHTML = greyTopsInput.value * 546
+ totalPallets.innerHTML = 0 + (1 * topsInput.value) + (1 * bottomsInput.value) + (1 * sidesInput.value) + (1 * greyTopsInput.value)
  totalWeight.innerHTML =  (topsInput.value * 391) + (bottomsInput.value * 538) + (sidesInput.value * 953) + (greyTopsInput.value * 546)
  totalPieces.innerHTML =  (topsInput.value * 25) + (bottomsInput.value * 25) + (sidesInput.value * 50) + (greyTopsInput.value * 320)
 if (greyTopsInput.value > 0) {
