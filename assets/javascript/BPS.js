@@ -20,7 +20,7 @@ let totalPallets = document.querySelector(".total-pallets")
 let topsInputValue = topsInput.value
 let bottomsInputValue = bottomsInput.value
 let sidesInputValue = sidesInput.value
-let blueSidesInputValue = blueSidesInput.value
+// let blueSidesInputValue = blueSidesInput.value
 let greyTopsInputValue = greyTopsInput.value
 let ymsNotes = document.querySelector(".result-yms-notes")
 let ymsNotes2 = document.querySelector(".result-yms-notes2")
@@ -34,15 +34,20 @@ calculate.addEventListener("click", function(){
  bottomsHTMLPieces.innerHTML = bottomsInput.value * 25
  sidesHTMLWeight.innerHTML = sidesInput.value * 953
  sidesHTMLPieces.innerHTML = sidesInput.value * 50
- blueSidesHTMLWeight.innerHTML = blueSidesInput.value * 927
- blueSidesHTMLPieces.innerHTML = blueSidesInput.value * 50
+//  blueSidesHTMLWeight.innerHTML = blueSidesInput.value * 927
+//  blueSidesHTMLPieces.innerHTML = blueSidesInput.value * 50
  greyTopsHTMLPieces.innerHTML = greyTopsInput.value * 320
  greyTopsHTMLWeight.innerHTML = greyTopsInput.value * 546
- totalPallets.innerHTML = 0 + (1 * topsInput.value) + (1 * bottomsInput.value) + (1 * sidesInput.value) + (1 * blueSidesInput.value) + (1 * greyTopsInput.value)
- totalWeight.innerHTML =  (topsInput.value * 391) + (bottomsInput.value * 538) + (sidesInput.value * 953) + (blueSidesInput.value * 927) + (greyTopsInput.value * 546)
- totalPieces.innerHTML =  (topsInput.value * 25) + (bottomsInput.value * 25) + (sidesInput.value * 50) + (blueSidesInput.value * 50) + (greyTopsInput.value * 320)
 
-//  ymsNotes.innerHTML ="NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides" ;
+//  totalPallets.innerHTML = 0 + (1 * topsInput.value) + (1 * bottomsInput.value) + (1 * sidesInput.value) + (1 * blueSidesInput.value) + (1 * greyTopsInput.value)
+//  totalWeight.innerHTML =  (topsInput.value * 391) + (bottomsInput.value * 538) + (sidesInput.value * 953) + (blueSidesInput.value * 927) + (greyTopsInput.value * 546)
+//  totalPieces.innerHTML =  (topsInput.value * 25) + (bottomsInput.value * 25) + (sidesInput.value * 50) + (blueSidesInput.value * 50) + (greyTopsInput.value * 320)
+ 
+totalPallets.innerHTML = 0 + (1 * topsInput.value) + (1 * bottomsInput.value) + (1 * sidesInput.value) + (1 * greyTopsInput.value)
+ totalWeight.innerHTML =  (topsInput.value * 391) + (bottomsInput.value * 538) + (sidesInput.value * 953) + (greyTopsInput.value * 546)
+ totalPieces.innerHTML =  (topsInput.value * 25) + (bottomsInput.value * 25) + (sidesInput.value * 50) + (greyTopsInput.value * 320)
+
+ ymsNotes.innerHTML ="NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides" ;
 //  ymsNotes2.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides";
  
 
@@ -69,11 +74,11 @@ calculate.addEventListener("click", function(){
 // }
 
 if (greyTopsInput.value > 1) {
-  ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides, " + blueSidesInput.value + " pallets of blue sides, " + greyTopsInput.value + " pallets of grey tote tops. Total weight = " + totalWeight.innerHTML + ", Total Pieces = " + totalPieces.innerHTML
+  ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides, " + greyTopsInput.value + " pallets of grey tote tops. Total weight = " + totalWeight.innerHTML + ", Total Pieces = " + totalPieces.innerHTML
 } if (greyTopsInput.value <= 0) {
- ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides, " + blueSidesInput.value + " pallets of blue sides. " + "Total weight = " + totalWeight.innerHTML + ", Total Pieces = " + totalPieces.innerHTML
+ ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides, " + "Total weight = " + totalWeight.innerHTML + ", Total Pieces = " + totalPieces.innerHTML
 } if (greyTopsInput.value == 1) {
-ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides, " + blueSidesInput.value + " pallets of blue sides, " + greyTopsInput.value + " pallet of grey tote tops. Total weight = " + totalWeight.innerHTML + ", Total Pieces = " + totalPieces.innerHTML
+ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides, " + greyTopsInput.value + " pallet of grey tote tops. Total weight = " + totalWeight.innerHTML + ", Total Pieces = " + totalPieces.innerHTML
 } 
 
 
@@ -86,8 +91,8 @@ ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + t
 //    ymsNotes.innerHTML = "NI BPS " + totalPallets.innerHTML + " Total pallets, " + topsInput.value + " pallets of tops, " + bottomsInput.value + " pallets of bottoms, " + sidesInput.value + " pallets of sides, " + blueSidesInput.value + " pallets of blue sides, " + greyTopsInput.value + " pallet of grey tote tops. Total weight = " + totalWeight.innerHTML + ", Total Pieces = " + totalPieces.innerHTML
 //  } 
  
- //  if (greyTopsInput.value > 1 && blueSidesInput.value > 1){
- //    ymsNotes.innerHTML = "yes"
- //  }
+//   if (greyTopsInput.value > 1 && blueSidesInput.value > 1){
+//     ymsNotes.innerHTML = "yes"
+//   }
 
 })
